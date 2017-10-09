@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/product/product",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
