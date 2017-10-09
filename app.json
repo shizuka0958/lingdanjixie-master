@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/product/product",
+    "pages/contact/contact"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "灵丹机械配件",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/company.png",
+        "selectedIconPath": "images/icon/company.png",
+        "text": "公司简介"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "iconPath": "images/icon/product.png",
+        "selectedIconPath": "images/icon/product.png",
+        "text": "产品展示"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "iconPath": "images/icon/contact.png",
+        "selectedIconPath": "images/icon/contact.png",
+        "text": "联系我们"
+      }
+    ]
+  }
+}

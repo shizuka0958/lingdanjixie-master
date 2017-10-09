@@ -1,0 +1,39 @@
+/**index.wxss**/
+swiper{
+  width:100%;
+  height:220px;
+}
+swiper-item image{
+  width:100%;
+  height:100%;  
+}
+.title_aboutus{
+  margin-bottom: -60rpx;
+}
+.image_title_aboutus{
+  margin-top:20rpx; 
+  margin-right:20rpx; 
+  width: 30px;
+  height:30px;
+}
+.text_title_aboutus{
+  position: absolute;
+  margin-top: 30rpx;
+  font-size: 16px;
+  font-weight:bold
+}
+.company-desc{
+  padding: 0 30rpx;
+  font-size: 15px;
+  line-height: 2;
+  background: linear-gradient(180deg,#e1e1e1,#e1e1e1 50%,transparent 0) 0 bottom/100% 1px no-repeat;
+}
+
+.company-desc .desc-limit{
+  height: 150px;
+  overflow: hidden;
+}
+.company-desc .desc-button{
+  padding: 40rpx;
+  text-align: center;
+}
