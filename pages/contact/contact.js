@@ -8,18 +8,27 @@ Page({
     contactListInfo: [
       {
         index:0,
-        icon: '../../images/icon/aboutus.png',
+        icon: '../../images/icon/wechat.png',
         text: '微信号',
+        marginleft:300,
+        num:"yanzi056855",
+        arrow:false
       }, {
         index: 1,
-        icon: '../../images/icon/aboutus.png',
+        icon: '../../images/icon/phone.png',
         text: '客服电话',
+        marginleft: 260,
+        num:"13775059933",
+        arrow: false
       }, {
         index: 2,
-        icon: '../../images/icon/aboutus.png',
-        text: '公司地址'
+        icon: '../../images/icon/addr.png',
+        text: '公司地址',
+        marginleft: 190,
+        num:"",
+        arrow: true
       }],
-    tmp_image: "../../images/icon/aboutus.png",
+   
   },
   onLoad: function () {
     var that = this;
@@ -51,7 +60,7 @@ Page({
     var index = data.index;
     if (1 == index){
       wx.makePhoneCall({
-        phoneNumber: '15051990811' 
+        phoneNumber: '13775059933' 
       })
     }else if(2 == index){
       wx.navigateTo({

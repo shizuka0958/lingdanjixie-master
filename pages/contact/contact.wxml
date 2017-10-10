@@ -13,7 +13,7 @@
         <view class="contact_cell_text">
           <view> {{item.text}} </view>
         </view>
-        <view class="with_arrow"></view>
+        <view class="contact_cell_num" style="margin-left:{{item.marginleft}}rpx">{{item.num}}<image wx:if="{{item.arrow}}" style="margin-left:{{item.marginleft}}rpx" src="../../images/icon/arrow-right.png" ></image></view>
       </view>
     </block>
   </view>

@@ -4,54 +4,39 @@ const app = getApp()
 
 Page({
   data: {
-    userinfo: "",
-    imgUrls: [
-      '../../images/swiper_4.jpg',
-      '../../images/swiper_2.jpeg',
-      '../../images/swiper_3.jpeg'
-    ],
-  },
-  onLoad: function () {
-  },
-  onReady: function (e) {
-    // 使用 wx.createMapContext 获取 map 上下文
-    this.mapCtx = wx.createMapContext('myMap')
-  },
-  getCenterLocation: function () {
-    this.mapCtx.getCenterLocation({
-      success: function (res) {
-        console.log(res.longitude)
-        console.log(res.latitude)
+    markers: [{
+      iconPath:"../../images/icon/marker.png",
+      id: 0,
+      latitude: 31.770560,
+      longitude: 120.023960,
+      width: 32,
+      height: 32,
+      callout:{
+        content:"常州市新动力创业中心22幢A单元",
+        display:"ALWAYS",
+        padding:3,
+        fontSzie:30,
+        borderRadius:5
       }
-    })
+    }]
   },
-  moveToLocation: function () {
-    this.mapCtx.moveToLocation()
+  regionchange(e) {
+    console.log(e.type)
   },
-  translateMarker: function () {
-    this.mapCtx.translateMarker({
-      markerId: 0,
-      autoRotate: true,
-      duration: 1000,
-      destination: {
-        latitude: 23.10229,
-        longitude: 113.3345211,
-      },
-      animationEnd() {
-        console.log('animation end')
-      }
-    })
+  markertap(e) {
+    console.log(e.markerId)
+    
   },
-  includePoints: function () {
-    this.mapCtx.includePoints({
-      padding: [10],
-      points: [{
-        latitude: 23.10229,
-        longitude: 113.3345211,
-      }, {
-        latitude: 23.00229,
-        longitude: 113.3345211,
-      }]
+  controltap(e) {
+    console.log(e.controlId)
+  },
+  navito:function(){
+    wx.openLocation({
+      latitude: 31.770560,
+      longitude: 120.023960,
+      scale: 28,
+      name:"常州市灵丹机械配件有限公司",
+      address:"常州市新动力创业中心22幢A单元"
     })
   }
 })

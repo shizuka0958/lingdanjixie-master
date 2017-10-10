@@ -34,10 +34,18 @@ page{
     background-color: #ffffff
 }
 .contact_cell_icon image{
-  width:40rpx;
-  height:40rpx;
+  width:42rpx;
+  height:42rpx;
   margin-top:10rpx;
 }
 .contact_cell_text{
   margin-left: 30rpx;
+}
+.contact_cell_num{
+  font-size: 26rpx;
+  color: #888
+}
+.contact_cell_num image{
+  width:42rpx;
+  height:42rpx;
 }
