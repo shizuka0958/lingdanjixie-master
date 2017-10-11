@@ -10,10 +10,10 @@
         <view class="contact_cell_icon">
           <image src="{{item.icon}}"></image>
         </view>
-        <view class="contact_cell_text">
+        <view class="contact_cell_text" style='margin-left:{{item.marginleft}}rpx'>
           <view> {{item.text}} </view>
         </view>
-        <view class="contact_cell_num" style="margin-left:{{item.marginleft}}rpx">{{item.num}}<image wx:if="{{item.arrow}}" style="margin-left:{{item.marginleft}}rpx" src="../../images/icon/arrow-right.png" ></image></view>
+        <view class="contact_cell_num" >{{item.num}}<image wx:if="{{item.arrow}}"  src="../../images/icon/arrow-right.png" ></image></view>
       </view>
     </block>
   </view>

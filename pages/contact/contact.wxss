@@ -28,6 +28,7 @@ page{
     display: flex;
     padding: 15px;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid #dadada;
     background-color: #ffffff
 }
@@ -36,10 +37,7 @@ page{
   height:42rpx;
   margin-top:10rpx;
 }
-.contact_cell_text{
-  margin-left: 30rpx;
-  flex-shrink: 0;
-}
+
 .contact_cell_num{
   font-size: 26rpx;
   color: #888
