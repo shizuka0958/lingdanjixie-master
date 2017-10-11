@@ -10,21 +10,21 @@ Page({
         index:0,
         icon: '../../images/icon/wechat.png',
         text: '微信号',
-        marginleft:300,
+        marginleft:280,
         num:"yanzi056855",
         arrow:false
       }, {
         index: 1,
         icon: '../../images/icon/phone.png',
         text: '客服电话',
-        marginleft: 260,
+        marginleft: 250,
         num:"13775059933",
         arrow: false
       }, {
         index: 2,
         icon: '../../images/icon/addr.png',
         text: '公司地址',
-        marginleft: 190,
+        marginleft: 180,
         num:"",
         arrow: true
       }],
