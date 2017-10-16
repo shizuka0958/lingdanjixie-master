@@ -5,9 +5,19 @@ map{
   width: 100%; 
   height: 92vh;
 }
-.button-go{
+.info{
   background-color:#f2f2f2;
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   height:8vh;
+}
+
+.info image{
+  margin-top: 25rpx;
+  margin-left: 16rpx;
+  width: 22px;
+  height: 22px;
 }

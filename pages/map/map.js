@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    icon_navi: "../../images/icon/navi.png",
     markers: [{
       iconPath:"../../images/icon/marker.png",
       id: 0,

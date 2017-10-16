@@ -7,26 +7,30 @@ swiper-item image{
   width:100%;
   height:100%;  
 }
-.title_aboutus{
-  margin-bottom: -60rpx;
+.company-desc .title_aboutus{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  margin-top:20rpx;
 }
-.image_title_aboutus{
-  margin-top:20rpx; 
-  margin-right:20rpx; 
-  width: 30px;
-  height:30px;
+.company-desc .image_title_aboutus{
+  width: 20px;
+  height:20px;
+  margin-top: 8rpx;
 }
-.text_title_aboutus{
-  position: absolute;
-  margin-top: 30rpx;
+.company-desc .text_title_aboutus{
   font-size: 16px;
-  font-weight:bold
+  font-weight:bold;
+  margin-left: 10rpx;
+}
+
+.company-desc .content{
+  margin-top:-50rpx;
 }
 .company-desc{
   padding: 0 30rpx;
   font-size: 15px;
   line-height: 2;
-  background: linear-gradient(180deg,#e1e1e1,#e1e1e1 50%,transparent 0) 0 bottom/100% 1px no-repeat;
 }
 
 .company-desc .desc-limit{
@@ -36,4 +40,65 @@ swiper-item image{
 .company-desc .desc-button{
   padding: 40rpx;
   text-align: center;
+  color: #999;
+}
+
+.container-goods .title_hot{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  margin-top:20rpx;
+}
+.container-goods .image_title_hot{
+  width: 20px;
+  height:20px;
+ 
+}
+.container-goods .text_title_hot{
+  font-size: 16px;
+  font-weight:bold;
+  margin-left: 10rpx;
+}
+
+.main-goods {
+	background: white;
+	display: inline-block;
+}
+.main-goods .single-goods {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.main-goods image {
+	width: 350rpx;
+  height: 350rpx;
+	display: block;
+	margin: 20rpx auto;
+}
+
+.main-goods .title {
+	display: block;
+	width: 90%;
+	color: #999;
+	font-size: 28rpx;
+	margin: 10rpx 20rpx;
+	height: 30rpx;
+	line-height: 32rpx;
+	overflow: hidden;
+}
+
+.main-goods .summary {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.main-goods .summary text {
+	font-size: 28rpx;
+	margin: 10rpx 0rpx 0rpx 20rpx;
+}
+
+.main-goods .summary .price {
+	color: red;
 }

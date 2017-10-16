@@ -2,6 +2,9 @@
 
 <map id="map" longitude="120.023960" latitude="31.770560" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location></map>
 
-<button class="button-go" bindtap="navito">去导航</button>
+<button class="info" bindtap="navito">
+<text>去导航</text>
+<image src = "{{icon_navi}}" ></image>
+</button>
 </view>
 

@@ -12,12 +12,28 @@
       <image class="image_title_aboutus" src="{{icon_aboutus}}"></image>
       <text class="text_title_aboutus">关于我们 ／ ABOUT US</text>
     </view>
-    <view class="{{!desc?'desc-limit':'desc-limit-show'}}">
+    <view class="content,{{!desc?'desc-limit':'desc-limit-show'}}">
       <text space="ensp">
-公司专业生产超声波机箱等且提供激光焊接加工,钣金件加工.我公司生产的超声波机箱安全可靠,质量有保障,并已获得了新老客户的一致好评!公司员工本着“质量第一，用户第一，信誉第一”的工作意识，使我们服务品质，产品质量更加满足顾客的需求。公司灵活的经营机制和先进的管理模式并拥有10年丰富的制造经验，使我们能迅捷地设计制造出符合市场需求的产品。近年来，我厂在产品开发速度和适应市场需求方面处于业内领先位置。产品在国内市场占有率 逐年提高。
+公司专业生产超声波机箱等且提供激光焊接加工,钣金件加工。我公司生产的超声波机箱安全可靠,质量有保障,并已获得了新老客户的一致好评!公司员工本着“质量第一，用户第一，信誉第一”的工作意识，使我们服务品质，产品质量更加满足顾客的需求。公司灵活的经营机制和先进的管理模式并拥有10年丰富的制造经验，使我们能迅捷地设计制造出符合市场需求的产品。近年来，我厂在产品开发速度和适应市场需求方面处于业内领先位置。产品在国内市场占有率 逐年提高。
 </text>
     </view>
     <view class="desc-button" wx:if="{{!desc}}" bindtap="showDesc">显示更多</view>
     <view class="desc-button" wx:elif="{{desc}}" bindtap="hideDesc">关闭</view>
   </view>
+
+  <view class="container-goods">
+	<view class="title_hot">
+      <image class="image_title_hot" src="{{icon_hot}}"></image>
+      <text class="text_title_hot">热卖推荐 ／ HOT SALES</text>
+    </view>
+	<view class="main-goods">
+		<view class="single-goods" wx:for="{{goods}}" wx:key="" bindtap="showDetail" data-index="{{index}}">
+			<image class="avatar" src="{{item.image}}"  />
+			<text class="title">{{item.title}}</text>
+			<view class="summary">
+				<text class="price">￥{{item.price}}</text>
+			</view>
+		</view>
+	</view>
+</view>
 </view>

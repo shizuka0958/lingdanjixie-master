@@ -1,29 +1,22 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/product/product",
     "pages/contact/contact",
     "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "灵丹机械配件",
+    "navigationBarTitleText": "常州市灵丹机械配件",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/icon/company.png",
-        "selectedIconPath": "images/icon/company.png",
-        "text": "公司简介"
-      },
-      {
-        "pagePath": "pages/product/product",
-        "iconPath": "images/icon/product.png",
-        "selectedIconPath": "images/icon/product.png",
-        "text": "产品展示"
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home.png",
+        "text": "主页"
       },
       {
         "pagePath": "pages/contact/contact",
