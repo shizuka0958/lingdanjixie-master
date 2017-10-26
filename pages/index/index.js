@@ -6,7 +6,7 @@ Page({
   data: {
     desc:false,
     imgUrls: [
-      '../../images/swiper_4.jpg',
+      '../../images/swiper_1.jpg',
       '../../images/swiper_2.jpeg',
       '../../images/swiper_3.jpeg'
     ],
@@ -88,4 +88,20 @@ Page({
       desc: false
     })
   },
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '常州市灵丹机械配件',
+      path: '/pages/index/index',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  }
 })
